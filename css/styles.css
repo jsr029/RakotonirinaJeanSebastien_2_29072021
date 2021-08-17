@@ -493,4 +493,20 @@ h1{
     .filtres {
         margin-top: 10px;
     }
+    .entete{
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: 
+        "a b"
+        "c c";
+    }
+    .entete img{
+        grid-area: a;
+        width: 120px;
+    }
+    .entete .menu{
+        grid-area: c;
+    }
+    .cherche button {
+        border-radius: 15px;
+    }
 }
