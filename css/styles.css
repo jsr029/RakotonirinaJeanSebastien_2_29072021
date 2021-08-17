@@ -542,9 +542,6 @@ h1{
     .cherche button{
         border-radius: 15px;   
     }
-    input[type="text"]{
-        max-width: 210px;
-    }
     input[type="text"] {
         max-width: 150px;
     }
