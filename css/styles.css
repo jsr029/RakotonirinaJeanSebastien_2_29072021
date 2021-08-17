@@ -478,20 +478,14 @@ h1{
     }
 }
 @media screen and (min-width:320px) and (max-width:360px){
-    input[type="text"] {
-        max-width: 155px;
-    }
-    h1 {
-        font-size: 1.4em;
-    }
-    header img {
-        max-width: 150px;
-    }
-    .entete a {
-        padding: 25px;
-    }
-    .filtres {
-        margin-top: 10px;
+    .middle{
+        display: flex;
+        flex-direction: column;
+    }    
+    .mostpop{
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 150px;
+        grid-column-gap: 30px;
     }
     .entete{
         grid-template-columns: 1fr 1fr;
@@ -499,17 +493,87 @@ h1{
         "a b"
         "c c";
     }
+    .entete a{
+        border-top: none;
+        padding: 25px;
+    }
+    .entete a:hover, .active{
+        border-bottom: 2px solid #0065FC;
+    }
     .entete img{
         grid-area: a;
-        width: 120px;
+        max-width: 150px;
     }
-    .entete .menu{
+    .menu{
         grid-area: c;
-    } 
-    .cherche button {
-        border-radius: 15px;
+    }
+    .a3{
+        grid-area: b;
+    }
+    .cherche{
+        display: flex;
+    }
+    .filtres{
+        max-width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: start;
+    }
+    .search{
+        justify-content: start;
+
+        margin: 0 5px 5px 0;
+    }
+    form{
+        display: flex;
+        flex-flow: row;
+    }
+    .filtres h2{
+        width: 100%;
+        grid-area: a;
+    }
+    h1{
+        font-size: 1.4em;
+    }
+    .loupe{
+        display: inline-block;
+        color: white;
+    }
+    .cherche button{
+        border-radius: 15px;   
+    }
+    input[type="text"] {
+        max-width: 150px;
     }
     .but{
-        display: inline-block;
+        display: none;
+    }
+    .mostpop{
+        display: flex;
+        flex-direction: column;
+    }
+    .hbgt{
+        display: flex;
+        flex-direction: column;
+    }
+    .hbgt_ch{
+        max-width: 100%;
+    }
+    .activites{
+        display: flex;
+        flex-direction: column;
+    }
+    .acts img{
+        height: auto;
+    }
+    .pom{
+        height: auto !important;
+    }
+    .pieds{
+        display: flex;
+        flex-direction: column;
+    }
+    .activites{
+        align-items: flex-start;
     }
 }
