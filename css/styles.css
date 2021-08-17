@@ -36,13 +36,15 @@ header img{
 /******************************* MENU *******************************/
 .entete a{
     padding: 50px;
-    font-weight: bold;
 }
 .entete a:hover, .active{
     border-top: 2px solid #0065FC;
 }
 .a1, .a3{
     color:#0065FC
+}
+.a{
+    font-weight: bold;
 }
 .entete a:nth-child(2){
     color: black;
