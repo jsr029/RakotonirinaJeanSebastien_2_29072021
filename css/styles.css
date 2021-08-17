@@ -6,8 +6,9 @@ body{
     /*padding: 0 20px 0 20px;*/
     font-size: 1em;
     overflow-x: hidden;
+    overflow-y: hidden;
 }
-i{color: #0065FC;}
+.middle i{color: #0065FC;}
 a{
     text-decoration: none;
 }
@@ -39,6 +40,9 @@ header img{
 }
 .entete a:hover, .active{
     border-top: 2px solid #0065FC;
+}
+.a1, .a3{
+    color:#0065FC
 }
 .entete a:nth-child(2){
     color: black;
