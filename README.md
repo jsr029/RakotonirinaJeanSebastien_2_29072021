@@ -1,4 +1,4 @@
-# RakotonirinaJeanSebsatien_2_29072021
+# RakotonirinaJeanSebastien_2_29072021
 PROJET 2 : Transformer une maquette en site web.
 
 Dans le cadre d'une formation Développeur Front-End chez OpenClassRooms, ce projet a pour but de développer des compétences :
