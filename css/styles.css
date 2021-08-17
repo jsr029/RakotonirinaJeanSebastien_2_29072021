@@ -410,7 +410,12 @@ h1{
     }
     .entete a{
         border-top: none;
+        font-size: 1em;
     }
+    .menu a, .entete a{
+        font-size: 1em;
+    }
+    
     .entete a:hover, .active{
         border-bottom: 2px solid #0065FC;
     }
@@ -511,6 +516,10 @@ h1{
         border-top: none;
         padding: 25px;
     }
+        .menu a, .entete a{
+        font-size: 1em;
+    }
+
     .entete a:hover, .active{
         border-bottom: 2px solid #0065FC;
     }
