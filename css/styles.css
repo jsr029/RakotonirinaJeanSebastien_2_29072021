@@ -17,7 +17,6 @@ a{
 header, main, .titre{
     width: 100%;
     max-width: 1440px;
-    max-height: 1884px;
     margin:auto !important;
 }
 /***************************************** HEADER ***********************************************/
