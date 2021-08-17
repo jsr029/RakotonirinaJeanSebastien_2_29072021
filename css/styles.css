@@ -312,7 +312,7 @@ h1{
     border-radius: 15px 15px 0 0;
 }
 .pom{
-    height: 210px !important;
+    height: 220px !important;
 }
 .acts_bloc{
     display: flex;
@@ -368,6 +368,12 @@ h1{
     }
     .loupe{
         display: none;
+    }
+    .acts_bloc h3{
+        font-size: 1em;
+    }
+    .pom {
+        height: 225px;
     }
 }
 @media screen and (min-width:600px) and (max-width:960px){
@@ -485,9 +491,6 @@ h1{
     .acts img{
         height: auto;
     }
-    .pom{
-        height: auto !important;
-    }
     .pieds{
         display: flex;
         flex-direction: column;
@@ -589,9 +592,6 @@ h1{
     }
     .acts img{
         height: auto;
-    }
-    .pom{
-        height: auto !important;
     }
     .pieds{
         display: flex;
