@@ -304,6 +304,7 @@ h1{
     grid-area: g;
 }
 .acts{
+    margin-bottom: 15px;
     border-radius: 15px;
     background: white;
     border: 1px solid #F2F2F2;
