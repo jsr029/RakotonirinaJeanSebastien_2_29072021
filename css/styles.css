@@ -480,15 +480,18 @@ h1{
     .acts img{
         height: auto;
     }
-    /*.pom{
-        height: auto !important;
-    }*/
+    .middle .hbgt_ch h3 {
+        font-size: large;
+    }
     .pieds{
         display: flex;
         flex-direction: column;
     }
     .activites{
         align-items: flex-start;
+    }
+    .pom{
+        height: auto !important;
     }
 }
 @media screen and (min-width:320px) and (max-width:360px){
