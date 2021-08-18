@@ -1,6 +1,3 @@
-html{
-    overflow-x: hidden;
-}
 body{
     font-family: "Raleway";
     /*padding: 0 20px 0 20px;*/
@@ -477,7 +474,7 @@ h1{
         align-items: flex-start;
     }
 }
-@media screen and (min-width:320px){
+@media screen and (min-width:320px) and (max-width:360px){
     input[type="text"] {
         max-width: 155px;
     }
