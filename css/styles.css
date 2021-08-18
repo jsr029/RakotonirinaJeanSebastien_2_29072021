@@ -463,9 +463,9 @@ h1{
     .acts img{
         height: auto;
     }
-    .pom{
+    /*.pom{
         height: auto !important;
-    }
+    }*/
     .pieds{
         display: flex;
         flex-direction: column;
