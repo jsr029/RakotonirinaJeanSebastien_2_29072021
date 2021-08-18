@@ -493,6 +493,9 @@ h1{
     .pom{
         height: auto !important;
     }
+    .pieds_bloc {
+        row-gap: 10px;
+    }
 }
 @media screen and (min-width:320px) and (max-width:360px){
     input[type="text"] {
@@ -503,6 +506,9 @@ h1{
     }
     h2{
         font-size: 1.4em;
+    }
+    .heb{
+        background: none !important;
     }
     header img {
         max-width: 150px;
