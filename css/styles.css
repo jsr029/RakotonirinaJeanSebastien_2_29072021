@@ -1,10 +1,8 @@
 body{
     font-family: "Raleway";
-    /*padding: 0 20px 0 20px;*/
     font-size: 1em;
-    max-width: 1440px;
-    max-height: 1884px;
-    margin: auto;
+    margin:0;
+    padding:0;
 }
 .filtres i, .search i{
     font-size: 1.5em;
@@ -20,7 +18,8 @@ a{
     display: none;
 }
 header, main, .titre{
-    width: 100%;
+    max-width: 1440px;
+    margin:0 auto;
 }
 /***************************************** HEADER ***********************************************/
 header{
