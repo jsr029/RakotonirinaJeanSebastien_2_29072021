@@ -4,7 +4,12 @@ body{
     font-size: 1em;
     overflow-x: hidden;
 }
-i{color: #0065FC;}
+.filtres i, .search i{
+    font-size: 1.5em;
+}
+.filtres i, .pop i, .heb i{
+    color: #0065FC;
+}
 a{
     text-decoration: none;
 }
@@ -106,7 +111,7 @@ h1{
     margin: 0 10px 0 5px !important;
 }
 .circle-icon{
-    padding: 23px;
+     padding: 16px;
     border-radius: 50%;
     border-left: 1px solid #d9d9d9;
     border-top: 1px solid #d9d9d9;
@@ -226,7 +231,7 @@ h1{
     margin-bottom: 0;
 }
 .sanse{
-    color: #F2F2F2;
+    color: #F2F2F2 !important;
 }
 .pop_ch:hover{
     transform: scale(1.04);
@@ -360,6 +365,10 @@ h1{
     }
     .loupe{
         display: none;
+    }
+    
+    .acts_bloc h3 {
+        font-size: 1em;
     }
 }
 @media screen and (min-width:600px) and (max-width:960px){
