@@ -10,7 +10,9 @@ body{
     "info info info info info info"
     "search search search search search search"
     "filter filter filter filter filter filter"
-    "result result result result result result";
+    "result result result result result result"
+    "middle middle middle middle middle middle"
+    "middle middle middle middle middle middle";
     align-items: center;
     max-width: 1440px;
     max-height: 1884px;
@@ -34,8 +36,8 @@ a{
 .pad50{
     padding:50px;
 }
-.marglft50{
-    margin-left: 50px;
+.marglft20{
+    margin-left: 20px;
 }
 .linkm1 a, .linkm2 a, .linkm3 a{
     margin-left: 20px;
@@ -99,6 +101,9 @@ a{
     font-size: 1.2em;
     margin: 0 20px 0 15px;
 }
+.filter i{
+    color: #0065FC;
+}
 .filter_bloc{
     display: flex;
     flex-direction: row;
@@ -121,4 +126,141 @@ a{
     grid-area: result;
     display: flex;
     flex-direction: row;
+}
+.result p{
+    margin-left: 30px;
+}
+.result i{
+    background: none;
+}
+/******************************** HEBERGEMENTS****************************/
+.middle{
+    grid-area: middle;
+    display: grid;
+    grid-template-columns: 7fr 3fr;
+    grid-template-areas: 
+    'hbgt pop';
+    grid-column-gap: 50px;
+    margin-right: 20px;
+}
+.hbgt{
+    grid-area: hbgt;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 50px 200px 200px;
+    grid-template-areas: 
+    "titre titre titre"
+    "canne port mouettes"
+    "mer panier amina"
+    "show show show";
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+    background: #F2F2F2;
+    background-size: contain;
+    border-radius: 15px;
+    padding: 0 20px 50px 20px;
+    margin-top: 30px;
+}
+
+.hbgt h2{
+    grid-area: titre;
+}
+.canne{
+    grid-area: canne;
+}
+.port{
+    grid-area: port;
+}
+.mouettes{
+    grid-area: mouettes;
+}
+.mer{
+    grid-area: mer;
+}
+.amina{
+    grid-area: amina;
+}
+.show{
+    grid-area: show;
+    text-decoration: none;
+    color: black;
+    margin: 20px 0 0 15px;
+}
+.hbgt_bloc{
+    max-width: 100%;
+    padding: 2px;
+    border-radius: 15px;
+    background: white;
+}
+.hbgt_bloc img {
+    width: 100%;
+    max-height: 60%;
+    object-fit: cover;
+    border-radius: 15px 15px 0 0;
+}
+.hbgt h3, .hbgt p.txt{
+    margin: 0 0 5px 15px;
+}
+.hbgt p.etoiles{
+    margin: 5px 0 0 15px;
+}
+.hbgt i{
+    color: #0065FC;
+}
+.starlost{
+    color: #F2F2F2 !important;
+}
+/************************************************Populaires********************************/
+.pop{
+    grid-area: pop;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 30px 150px 150px 150px;
+    grid-row-gap: 20px;
+    background: white;
+    border-radius: 15px;
+    padding: 0 20px 50px 30px;
+    margin-top: 30px;
+    background: #F2F2F2;
+}
+.pop .poptitle{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 20px 0 30px 0;
+}
+.pop_bloc{
+    display: grid;
+    grid-template-columns: 100px auto;
+    grid-template-rows: 50px 20px 20px 20px;
+    grid-template-areas: 
+    "image titre"
+    "image texte"
+    "image rien"
+    "image etoiles";
+    max-width: 100%;
+    margin-top: 30px;
+    max-height: 120px;    
+    background: white;
+    padding: 5px;
+    border-radius: 15px 0 0 15px;
+}
+.pop_bloc img{
+    grid-area: image;
+    max-width: 100px;
+    height: 110px;
+    object-fit: cover;
+    border-radius: 15px 0 0 15px;
+}
+.pop_bloc h3{
+    grid-area: titre;
+}
+.pop_bloc p.txt{
+    grid-area: texte;
+}
+.pop_bloc p.etoiles{
+    grid-area: etoiles;
+}
+.pop_bloc h3, .pop_bloc p.txt, .pop_bloc p.etoiles{
+    margin:0 0 2px 10px;
 }
