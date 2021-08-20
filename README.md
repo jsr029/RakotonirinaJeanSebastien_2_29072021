@@ -7,5 +7,5 @@ Dans le cadre d'une formation Développeur Front-End chez OpenClassRooms, ce pro
 - Intégrer du contenu conformément à une maquette
 - Implémenter une interface responsive.
 
-Dans cette version 3.0, je vais utiliser Grid Css sue le Body. 
+Dans cette version 3.0, je vais utiliser Grid Css sur le Body. 
 L'avatange sera une lecture simple du code et la possibilité de modifier rapidement le style des conteneurs.
