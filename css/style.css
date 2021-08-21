@@ -222,6 +222,9 @@ a{
     margin-top: 30px;
     background: #F2F2F2;
 }
+.pop i{
+    color: #0065FC;
+}
 .pop .poptitle{
     display: flex;
     flex-direction: row;
