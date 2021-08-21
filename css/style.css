@@ -248,7 +248,7 @@ a{
 }
 .pop_bloc{
     display: grid;
-    grid-template-columns: 130px auto;
+    grid-template-columns: 150px auto;
     grid-template-areas: 
     "image titre"
     "image texte"
@@ -278,4 +278,26 @@ a{
 }
 .pop_bloc h3, .pop_bloc p.txt, .pop_bloc p.etoiles{
     margin:0 0 2px 10px;
+}
+/*********************** MEDIA QUERIES *******************************************/
+@media screen and (max-width:768px){
+        .middle{
+            grid-area: middle;
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-areas: 
+            "pop"
+            "hbgt";
+            grid-column-gap: 50px;
+            margin-right: 20px;
+        }
+        h1, h2{
+            font-size: 1.4em;
+        }
+        .hbgt h3, .hbgt p.txt, .hbgt p.etoiles{
+            margin: 0 0 5px 5px;
+        }
+        .hbgt h3{
+            font-size: 1em;
+        }
 }
