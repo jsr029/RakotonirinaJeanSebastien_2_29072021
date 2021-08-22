@@ -1,0 +1,460 @@
+body{
+    font-family: "Raleway";
+    font-size: 1em;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(10, auto);
+    grid-gap: 20px;
+    grid-template-areas: 
+    "logo logo logo linkm1 linkm2 linkm3"
+    "info info info info info info"
+    "search search search search search search"
+    "filter filter filter filter filter filter"
+    "result result result result result result"
+    "middle middle middle middle middle middle"
+    "middle middle middle middle middle middle"
+    "activities activities activities activities activities activities"
+     "activities activities activities activities activities activities"
+   "pieds pieds pieds pieds pieds pieds";
+    align-items: center;
+    max-width: 1440px;
+    max-height: 1884px;
+    margin: 0 auto;
+    padding: 0;
+}
+/****************************************** Header ***********************************/
+
+/******************************************Logo Menu ***************/
+.logo{
+    grid-area: logo;
+    margin: 20px 30px 0 20px;
+}
+.logo img{
+    width: 120px;
+}
+a{
+    text-decoration: none;
+    color: #0065FC;
+}
+.pad50{
+    padding:50px;
+}
+.marglft20{
+    margin-left: 20px;
+}
+.linkm1 a, .linkm2 a, .linkm3 a{
+    margin-left: 20px;
+}
+.linkm1:hover, .linkm2:hover, .linkm3:hover{
+    border-top: 1px solid #0065FC;
+}
+.linkm1{
+    grid-area: linkm1;
+    border-top: 1px solid #0065FC;
+}
+.linkm2{
+    grid-area: linkm2;
+}
+.linkm3{
+    grid-area: linkm3;
+}
+/********************************** Info SEARCH *************************/
+.info{
+    grid-area: info;
+}
+.search{
+    grid-area: search;
+    display: flex;
+    flex-direction: row;
+}
+.search i{
+    padding:20px;
+    background: #F2F2F2;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+}
+.search input[type="text"]{
+    padding: 20px 0 20px 10px;
+    border-top: 1px solid #F2F2F2;
+    border-bottom: 1px solid #F2F2F2;
+    border-left: none;
+    border-right: none;
+    font-size: 1.1em;
+
+}
+.search button{
+    padding: 20px;
+    background: #0065FC;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    color: white;
+    font-weight: bold;
+    border: 1px solid #DEEBFF;
+    font-size: 1.1em;
+}
+/************************************FILTER ********************************/
+.filter{
+    grid-area: filter;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.filter h2{
+    font-size: 1.2em;
+    margin: 0 20px 0 15px;
+}
+.filter i{
+    color: #0065FC;
+}
+.filter_bloc{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 30px;
+    font-weight: bold;
+    border: 2px solid #F2F2F2;
+    border-radius: 80px;
+    cursor: pointer;
+}
+.circle-icon {
+    padding: 16px;
+    border-radius: 50%;
+    border-left: 1px solid #d9d9d9;
+    border-top: 1px solid #d9d9d9;
+    background: #DEEBFF;
+}
+.result{
+    grid-area: result;
+    display: flex;
+    flex-direction: row;
+}
+.result p{
+    margin-left: 30px;
+}
+.result i{
+    background: none;
+}
+/******************************** HEBERGEMENTS****************************/
+.middle{
+    grid-area: middle;
+    display: grid;
+    grid-template-columns: 6fr 3fr;
+    grid-template-areas: 
+    "hbgt pop";
+    grid-column-gap: 50px;
+    margin-right: 20px;
+}
+.hbgt{
+    grid-area: hbgt;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 50px 200px 200px;
+    grid-template-areas: 
+    "titre titre titre"
+    "canne port mouettes"
+    "mer panier amina"
+    "show show show";
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+    background: #F2F2F2;
+    background-size: contain;
+    border-radius: 15px;
+    padding: 0 20px 50px 20px;
+    margin-top: 30px;
+}
+
+.hbgt h2{
+    grid-area: titre;
+}
+.canne{
+    grid-area: canne;
+}
+.port{
+    grid-area: port;
+}
+.mouettes{
+    grid-area: mouettes;
+}
+.mer{
+    grid-area: mer;
+}
+.amina{
+    grid-area: amina;
+}
+.show{
+    grid-area: show;
+    text-decoration: none;
+    color: black;
+    margin: 20px 0 0 15px;
+}
+.hbgt_bloc{
+    max-width: 100%;
+    padding: 2px;
+    border-radius: 15px;
+    background: white;
+}
+.hbgt_bloc img {
+    width: 100%;
+    max-height: 60%;
+    object-fit: cover;
+    border-radius: 15px 15px 0 0;
+}
+.hbgt h3, .hbgt p.txt{
+    margin: 0 0 5px 15px;
+}
+.hbgt p.etoiles{
+    margin: 5px 0 0 15px;
+}
+.hbgt i{
+    color: #0065FC;
+}
+.starlost{
+    color: #F2F2F2 !important;
+}
+/************************************************Populaires********************************/
+.pop{
+    grid-area: pop;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 50px 1fr 1fr 1fr;
+    grid-template-areas: 
+    "title"
+    "matin"
+    "eau"
+    "bleu";
+    grid-row-gap: 20px;
+    border-radius: 15px;
+    padding: 0 20px 50px 30px;
+    margin-top: 30px;
+    background: #F2F2F2;
+}
+.title{
+    grid-area: title;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 20px 0 30px 0;
+}
+.matin{
+    grid-area: matin;
+}
+.eau{
+    grid-area: eau;
+}
+.bleu{
+    grid-area: bleu;
+}
+.pop_bloc i{
+    color: #0065FC;
+}
+.pop_bloc{
+    display: grid;
+    grid-template-columns: 150px auto;
+    grid-template-areas: 
+    "image titre"
+    "image texte"
+    "image rien"
+    "image etoiles";
+    max-width: 100%;
+    max-height: 200px;    
+    background: white;
+    padding: 5px;
+    border-radius: 15px 0 0 15px;
+}
+.pop_bloc img{
+    grid-area: image;
+    max-width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 15px 0 0 15px;
+}
+.pop_bloc h3{
+    grid-area: titre;
+}
+.pop_bloc p.txt{
+    grid-area: texte;
+}
+.pop_bloc p.etoiles{
+    grid-area: etoiles;
+}
+.pop_bloc h3, .pop_bloc p.txt, .pop_bloc p.etoiles{
+    margin:0 0 2px 10px;
+}
+.filter_bloc, .pop_bloc, .hbgt_bloc{
+    cursor: pointer;
+}
+.filter_bloc:hover, .pop_bloc:hover, .hbgt_bloc:hover, .acts_bloc:hover{
+    transform: scale(1.1);
+}
+.pop_bloc, .hbgt_bloc{
+    box-shadow: 0 5px 10px grey;
+}
+/*************************************************Activités **********************************/
+.activities{
+    grid-area: activities;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: 50px 150px 150px 150px;
+    grid-template-areas: 
+    "titre titre titre titre"
+    "vport fort national dame"
+    "vport fort national parc"
+    "vport frioul national parc";
+    justify-content: space-between;
+    align-items: c;
+    grid-column-gap: 30px;
+    grid-row-gap: 30px;
+    justify-content: space-around;
+    align-items: center;
+    margin: 50px 0 50px 0;
+}
+.acts_bloc{
+    height: 100%;
+    box-shadow: 0 5px 10px grey;
+    border-radius: 15px;
+}
+.acts_bloc a{
+    min-width: 50px;
+    min-height: 50px;
+}
+.actitre{
+    grid-area: titre;
+}
+.vport{
+    grid-area: vport;
+}
+.vport img{
+    width: 100%;
+    height: 450px;
+    object-fit: cover;
+    border-radius: 15px 15px 0 0;
+}
+.fort{
+    grid-area: fort;
+}
+.fort img{
+    width: 100%;
+    height: 270px;
+    object-fit: cover;
+    border-radius: 15px 15px 0 0;
+}
+.national{
+    grid-area: national;
+}
+.national img{
+    width: 100%;
+    height: 450px;
+    object-fit: cover;
+    border-radius: 15px 15px 0 0;
+}
+.dame{
+    grid-area: dame;
+    height: 200px;
+}
+.dame img{
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 15px 15px 0 0;
+}
+.frioul{
+    grid-area: frioul;
+}
+.frioul img{
+    height: 90px;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 15px 15px 0 0;
+}
+.parc{
+    grid-area: parc;
+    height: 200px ;
+}
+.parc img{
+    height:180px;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 15px 15px 0 0;
+}
+.acts_bloc h3{
+    color:black;
+    margin-left: 10px;
+    font-weight : bold;
+}
+/*****************************Footer*******************************/
+.pieds{
+    grid-area: pieds;
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: 
+    "propos heb assistance";
+    background: #F2F2F2;
+}
+.pieds_bloc{
+    margin: 0 0 30px 30px;
+}
+.pieds_bloc a{
+    color: black;
+}
+.propos{
+    grid-area: propos;
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+}
+.heb{
+    grid-area: heb;
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+}
+.assistance{
+    grid-area: assistance;
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+}
+/*********************** MEDIA QUERIES *******************************************/
+@media screen and (max-width:1024px){
+        .middle{
+            grid-area: middle;
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-areas: 
+            "pop"
+            "hbgt";
+            grid-column-gap: 50px;
+            margin-right: 20px;
+        }
+        h1, h2{
+            font-size: 1.4em;
+        }
+        .hbgt h3, .hbgt p.txt, .hbgt p.etoiles{
+            margin: 0 0 5px 5px;
+        }
+        .hbgt h3{
+            font-size: 1em;
+        }
+        .pop{
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: 50px auto;
+            grid-column-gap: 20px;
+            grid-template-areas: 
+            "title title title"
+            "matin eau bleu";
+            padding: 0 20px 50px 20px;       
+        }
+        .pop_bloc{
+            grid-template-columns: 95px auto;
+            margin: 10px;
+        }
+        .pop_bloc img{
+            grid-area: image;
+            max-width: 100%;
+            height: 100px;
+            object-fit: cover;
+            border-radius: 15px 0 0 15px;
+        }
+}
