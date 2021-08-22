@@ -3,7 +3,7 @@ body{
     font-size: 1em;
     display: grid;
     grid-template-columns: repeat(6, 1fr);
-    grid-template-rows: repeat(4, auto);
+    grid-template-rows: repeat(10, auto);
     grid-gap: 20px;
     grid-template-areas: 
     "logo logo logo linkm1 linkm2 linkm3"
@@ -12,7 +12,10 @@ body{
     "filter filter filter filter filter filter"
     "result result result result result result"
     "middle middle middle middle middle middle"
-    "middle middle middle middle middle middle";
+    "middle middle middle middle middle middle"
+    "activities activities activities activities activities activities"
+     "activities activities activities activities activities activities"
+   "pieds pieds pieds pieds pieds pieds";
     align-items: center;
     max-width: 1440px;
     max-height: 1884px;
@@ -137,9 +140,9 @@ a{
 .middle{
     grid-area: middle;
     display: grid;
-    grid-template-columns: 7fr 3fr;
+    grid-template-columns: 6fr 3fr;
     grid-template-areas: 
-    'hbgt pop';
+    "hbgt pop";
     grid-column-gap: 50px;
     margin-right: 20px;
 }
@@ -279,8 +282,142 @@ a{
 .pop_bloc h3, .pop_bloc p.txt, .pop_bloc p.etoiles{
     margin:0 0 2px 10px;
 }
+.filter_bloc, .pop_bloc, .hbgt_bloc{
+    cursor: pointer;
+}
+.filter_bloc:hover, .pop_bloc:hover, .hbgt_bloc:hover, .acts_bloc:hover{
+    transform: scale(1.1);
+}
+.pop_bloc, .hbgt_bloc{
+    box-shadow: 0 5px 10px grey;
+}
+/*************************************************Activités **********************************/
+.activities{
+    grid-area: activities;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: 50px 150px 150px 150px;
+    grid-template-areas: 
+    "titre titre titre titre"
+    "vport fort national dame"
+    "vport fort national parc"
+    "vport frioul national parc";
+    justify-content: space-between;
+    align-items: c;
+    grid-column-gap: 30px;
+    grid-row-gap: 30px;
+    justify-content: space-around;
+    align-items: center;
+    margin: 50px 0 50px 0;
+}
+.acts_bloc{
+    height: 100%;
+    box-shadow: 0 5px 10px grey;
+    border-radius: 15px;
+}
+.acts_bloc a{
+    min-width: 50px;
+    min-height: 50px;
+}
+.actitre{
+    grid-area: titre;
+}
+.vport{
+    grid-area: vport;
+}
+.vport img{
+    width: 100%;
+    height: 450px;
+    object-fit: cover;
+    border-radius: 15px 15px 0 0;
+}
+.fort{
+    grid-area: fort;
+}
+.fort img{
+    width: 100%;
+    height: 270px;
+    object-fit: cover;
+    border-radius: 15px 15px 0 0;
+}
+.national{
+    grid-area: national;
+}
+.national img{
+    width: 100%;
+    height: 450px;
+    object-fit: cover;
+    border-radius: 15px 15px 0 0;
+}
+.dame{
+    grid-area: dame;
+    height: 200px;
+}
+.dame img{
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 15px 15px 0 0;
+}
+.frioul{
+    grid-area: frioul;
+}
+.frioul img{
+    height: 90px;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 15px 15px 0 0;
+}
+.parc{
+    grid-area: parc;
+    height: 200px ;
+}
+.parc img{
+    height:180px;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 15px 15px 0 0;
+}
+.acts_bloc h3{
+    color:black;
+    margin-left: 10px;
+    font-weight : bold;
+}
+/*****************************Footer*******************************/
+.pieds{
+    grid-area: pieds;
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: 
+    "propos heb assistance";
+    background: #F2F2F2;
+}
+.pieds_bloc{
+    margin: 0 0 30px 30px;
+}
+.pieds_bloc a{
+    color: black;
+}
+.propos{
+    grid-area: propos;
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+}
+.heb{
+    grid-area: heb;
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+}
+.assistance{
+    grid-area: assistance;
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+}
 /*********************** MEDIA QUERIES *******************************************/
-@media screen and (max-width:768px){
+@media screen and (max-width:1024px){
         .middle{
             grid-area: middle;
             display: grid;
@@ -299,5 +436,25 @@ a{
         }
         .hbgt h3{
             font-size: 1em;
+        }
+        .pop{
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: 50px auto;
+            grid-column-gap: 20px;
+            grid-template-areas: 
+            "title title title"
+            "matin eau bleu";
+            padding: 0 20px 50px 20px;       
+        }
+        .pop_bloc{
+            grid-template-columns: 95px auto;
+            margin: 10px;
+        }
+        .pop_bloc img{
+            grid-area: image;
+            max-width: 100%;
+            height: 100px;
+            object-fit: cover;
+            border-radius: 15px 0 0 15px;
         }
 }
