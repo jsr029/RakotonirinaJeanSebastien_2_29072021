@@ -21,9 +21,9 @@ a{
     text-decoration: none;
 }
 
-.main::-webkit-scrollbar {
+/*.main::-webkit-scrollbar {
     display: none;
-}
+}*/
  main, footer{
     max-width: 1440px;
     margin:auto;
