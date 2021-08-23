@@ -7,9 +7,15 @@
         <meta name="description" content="Reservia est un site de réservation en ligne d'hébergements et d'activités pour les vacances. Formation Développeur Front-End chez OpenClassRooms.">        
         <title>Reservia - Trouvez votre hébergement pour des vacances de rêve</title>
         <link rel="stylesheet" href="./css/styles.css">
+        <link rel="stylesheet" href="./css/responsive.css">
+        <link rel="stylesheet" href="./css/contact.css">
         <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Raleway">    
         <link rel="icon" href="favicon.ico" />
-        <script src="https://use.fontawesome.com/releases/v5.15.4/js/all.js" data-auto-replace-svg="nest"></script>        
+        <script src="https://kit.fontawesome.com/a773d24a5d.js" crossorigin="anonymous"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script src="./js/contact.js"
+        <script src="https://use.fontawesome.com/releases/v5.15.4/js/all.js"></script>
+
     </head>
     <body> 
         <main class="container">
@@ -239,9 +245,22 @@
                  <div class="pieds_bloc">
                     <h3>Assistance</h3>
                     <a href="#">Centre d'aide</a>
-                    <a href="#">Nous contacter</a>                    
+                    <div class="contact" onclick="popup();">Nous contacter</div>                    
                 </div>
            </div>
         </footer>
+        <!------------Popup Formulaire de contact-------------->
+        <div class="contactForm">
+            <h1 class="titrec">Restons en contact!</h1>
+            <small class="asap">Je reviendrai vers vous aussitôt que possible</small>
+            <form class="send" action="#">
+                <input class="nom" placeholder="Nom" type="text" required /><br/>
+                <input class="courriel" placeholder="Email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" type="email" required />
+                <input class="objet" placeholder="Object" type="text" required />
+                <textarea class="avis" placeholder="Commentaire"></textarea>
+                <button class="formBtn envoi">Envoyer</button>
+                <button class="formBtn reset">Effacer</button>
+            </form>
+        </div>
     </body>
 </html>
