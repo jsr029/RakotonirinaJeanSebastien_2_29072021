@@ -21,13 +21,12 @@ a{
     text-decoration: none;
 }
 
-.main::-webkit-scrollbar {
+/*.main::-webkit-scrollbar {
     display: none;
-}
+}*/
  main, footer{
-    max-width: 1440px;
+    width: 1440px;
     margin:auto;
-    overflow-x: hidden;
 }
 /********************************************************* HEADER ***********************************************/
 header{
