@@ -82,6 +82,7 @@
     }
     .entete .a1:hover, .entete .a2:hover{
         border-bottom: 2px solid #0065FC;
+        border-top: none;
     }
     .entete img{
         grid-area: a;
