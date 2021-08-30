@@ -80,9 +80,12 @@
         border-top: none;
         font-size: 1em;
     }
-    .entete .a1:hover, .entete .a2:hover{
+    .a1:hover, .a2:hover, a.active{
         border-bottom: 2px solid #0065FC;
         border-top: none;
+    }
+    .a2{
+        border-bottom: 2px solid #f2f2f2;
     }
     .entete img{
         grid-area: a;

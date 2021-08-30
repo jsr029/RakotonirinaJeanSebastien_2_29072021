@@ -55,7 +55,7 @@ header img{
 .a3{
     font-weight: bold; 
 }
-.entete .a1:hover, .entete .a2:hover{
+ .a1:hover,  .a2:hover,  a.active{
     border-top: 2px solid #0065FC;
 }
 .entete a:nth-child(2){
