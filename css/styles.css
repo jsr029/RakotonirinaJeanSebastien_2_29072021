@@ -76,7 +76,13 @@ h1{
 }
 
 /***************************************************** Cherche **********************************************/
-.cherche{
+    .but{
+        display: block;
+    }
+    .loupe{
+        display: none !important;
+    }
+    .cherche{
     display: inline-flex;
     flex-direction: row;
     align-items: center;
@@ -414,6 +420,3 @@ h1{
 .pieds_bloc a{
     color: black;
 }    
-.loupe{
-        display: none;
-}

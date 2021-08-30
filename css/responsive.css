@@ -50,6 +50,12 @@
     .entete{
         justify-content:flex-start;
     }
+    .but{
+        display: block;
+    }
+    .loupe{
+        display: none !important;
+    }
     .acts_bloc h3{
         font-size: 0.7em;
     }
@@ -62,8 +68,11 @@
         display: flex;
         flex-direction: column;
     }    
-    .cherche button.but{
+    .but{
         display: block;
+    }
+    .loupe{
+        display: none !important;
     }
     .mostpop{
         grid-template-columns: 1fr 1fr 1fr;
@@ -120,19 +129,15 @@
     h1{
         font-size: 1.5em;
     }
-    .loupe{
-        display: none;
-        color: white;
-    }
     .cherche button{
         border-radius: 15px;   
     }
     input[type="text"]{
         max-width: 210px;
     }
-    /*.but{
-        display: none;
-    }*/
+    .but{
+        display: block;
+    }
     .mostpop{
         display: flex;
         flex-direction: column;
@@ -191,9 +196,9 @@
         margin-top: 30px;
     }
 }
-@media screen and (max-width:425px){
+@media screen and (max-width:447px){
     .loupe{
-        display: block;
+        display: block !important;
         color:white
     }
     .but{
