@@ -121,7 +121,7 @@
         font-size: 1.5em;
     }
     .loupe{
-        display: inline-block;
+        display: none;
         color: white;
     }
     .cherche button{
@@ -130,9 +130,9 @@
     input[type="text"]{
         max-width: 210px;
     }
-    .but{
+    /*.but{
         display: none;
-    }
+    }*/
     .mostpop{
         display: flex;
         flex-direction: column;
@@ -191,6 +191,16 @@
         margin-top: 30px;
     }
 }
+@media screen and (max-width:425px){
+    .loupe{
+        display: block;
+        color:white
+    }
+    .but{
+        display: none !important;
+    }   
+
+}
 @media screen and (max-width:375px){
     input[type="text"] {
         max-width: 155px;
@@ -198,6 +208,13 @@
     h1 {
         font-size: 1.4em;
     }
+    .loupe{
+        display: block;
+        color:white
+    }
+    .but{
+        display: none !important;
+    }   
     h2{
         font-size: 1.4em;
     }
