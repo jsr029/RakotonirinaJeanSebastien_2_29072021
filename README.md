@@ -7,4 +7,4 @@ Dans le cadre d'une formation Développeur Front-End chez OpenClassRooms, ce pro
 - Intégrer du contenu conformément à une maquette
 - Implémenter une interface responsive.
 
-Bien comprendre que la maquette n'est pas un fichier psd mais un png !
+Découpage mental de la maquette Desktop puis au fur et à mesure adaptation aux différents écrans jusqu'à obtenir le rendu de la maquette mobile.
