@@ -219,6 +219,9 @@
     }
     .but{
         display: none !important;
+    }
+    .search h3{
+        margin: 0 5px 0 5px !important;
     }   
     h2{
         font-size: 1.4em;

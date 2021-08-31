@@ -24,7 +24,7 @@ a{
 /*.main::-webkit-scrollbar {
     display: none;
 }*/
- main, footer{
+.container, footer{
     max-width: 1440px;
     margin:auto;
     overflow-x: hidden;
