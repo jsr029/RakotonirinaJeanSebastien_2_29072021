@@ -3,9 +3,6 @@ body{
     font-size: 1em;
     margin:0;
     padding:0;
-    overflow-y: hidden; /* Hide vertical scrollbar */
-    overflow-x: hidden; /* Hide horizontal scrollbar */
-
 }
 .entete, .filtres, .titre, .cherche, .info{
     margin-left: 20px;
